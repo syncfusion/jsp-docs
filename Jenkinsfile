@@ -7,7 +7,7 @@ String platform='JSP';
    try
 	{   
 	
-	def Content="";
+	    def Content="";
 		env.PATH = "${ProgramFiles}"+"\\Git\\mingw64\\bin;${env.PATH}"
 		
 		//Clone scm repository in Workspace source directory
@@ -17,7 +17,7 @@ String platform='JSP';
            {
 		     checkout scm
 			 
-			 def branchCommit = '"' + 'https://gitlab.syncfusion.com/api/v4/projects/' + env.projectId + '/merge_requests/' + env.MergeRequestId + '/changes'
+			def branchCommit = '"' + 'https://gitlab.syncfusion.com/api/v4/projects/' + env.projectId + '/merge_requests/' + env.MergeRequestId + '/changes'
             String branchCommitDetails = bat returnStdout: true, script: 'curl -s --request GET --header PRIVATE-TOKEN:' + env.BuildAutomation_PrivateToken + " " + branchCommit
 
             def ChangeFiles= branchCommitDetails.split('\n')[2];
