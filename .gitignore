@@ -7,5 +7,4 @@ index.d.ts
 gulpfile.js
 node_modules/
 .gitlab/
-.*Jenkinsfile
-jenkinsfile
+Jenkinsfile
