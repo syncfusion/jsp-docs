@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Welcome to Syncfusion Essential JSP
-description: Overview of Syncfusion Essential JSP.
+description: This section explains about the Syncfusion Essential JSP. This Syncfusion JSP is used to create the rich dynamic web content.
 platform: jsp
 control: Introduction
 documentation: ug
